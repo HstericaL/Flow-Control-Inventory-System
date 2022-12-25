@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Flow_Control_Inventory_System.forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Flow_Control_Inventory_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new //form());
+            Application.Run(new FormLogin());
         }
     }
 }
