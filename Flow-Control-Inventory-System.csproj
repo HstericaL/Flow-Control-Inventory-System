@@ -77,10 +77,19 @@
     <Compile Include="forms\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -121,6 +130,17 @@
   <ItemGroup>
     <None Include="assets\logo_120px.png" />
     <None Include="assets\logo.png" />
+    <None Include="assets\icons\add-category-icon.png" />
+    <None Include="assets\icons\add-item-in-cart-icon.png" />
+    <None Include="assets\icons\add-user-icon.png" />
+    <None Include="assets\icons\cart-icon.png" />
+    <None Include="assets\icons\dashboard-report-icon.png" />
+    <None Include="assets\icons\package-add-icon.png" />
+    <None Include="assets\icons\package-cancelled-icon.png" />
+    <None Include="assets\icons\remove-category-icon.png" />
+    <None Include="assets\icons\remove-from-cart-icon.png" />
+    <None Include="assets\icons\remove-user-icon.png" />
+    <None Include="assets\icons\user-icon.png" />
     <Content Include="logo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

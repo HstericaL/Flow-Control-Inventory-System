@@ -31,6 +31,7 @@ namespace Flow_Control_Inventory_System.forms
             }
             base.WndProc(ref m);
         }
+
         //Make form draggable
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -47,10 +48,26 @@ namespace Flow_Control_Inventory_System.forms
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        //Events/Methods
+        //events
         private void ButtonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            if (textBoxUsername.Text == "admin" && textBoxPassword.Text == "admin")
+            {
+                FormMenu formMenu = new FormMenu();
+                MessageBox.Show("Administrative login successful!", "Administrator");
+                this.Hide();
+                formMenu.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                textBoxPassword.Text = "";
+                MessageBox.Show("Wrong username or password.", "Alert");
+            }
         }
     }
 }
