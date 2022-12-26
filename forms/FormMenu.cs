@@ -103,50 +103,81 @@ namespace Flow_Control_Inventory_System.forms
         }
 
         //Method for expanding a button
-        private bool isSubmenuExpanded;
+        private bool isSubMenuExpanded;
         private int subMenuHeight;
-        private Button currentButton;
+        private Panel currentPanel;
 
         private void timerMenu_Tick(object sender, EventArgs e)
         {
-            if (isSubmenuExpanded)
+            if (isSubMenuExpanded)
             {
                 if (subMenuHeight < 100)
                 {
                     subMenuHeight += 10;
-                } else
+                }
+                else
                 {
                     timerMenu.Stop();
                 }
-            } else
+            }
+            else
             {
-                if(subMenuHeight > 0)
+                if (subMenuHeight > 0)
                 {
                     subMenuHeight -= 10;
-                } else
+                }
+                else
                 {
                     timerMenu.Stop();
                 }
             }
-            panelInventoryContainer.Height = subMenuHeight;
+            currentPanel.Height = subMenuHeight;
         }
-        private void toggleSubmenu(Button button)
+    
+        private void toggleSubmenu(Panel panel)
         {
-            if (currentButton != button)
+            if (panel != currentPanel)
             {
-                currentButton = button;
-                timerMenu.Start();
-                isSubmenuExpanded = true;
-            } else
-            {
-                timerMenu.Start();
-                isSubmenuExpanded = !isSubmenuExpanded; 
+                currentPanel = panel;
+                subMenuHeight = 0;
+                isSubMenuExpanded = true;
             }
+            else
+            {
+                isSubMenuExpanded = !isSubMenuExpanded;
+            }
+            timerMenu.Start();
         }
 
         private void buttonInventoryManagement_Click(object sender, EventArgs e)
         {
-            toggleSubmenu((Button) sender);
+            toggleSubmenu(panelInventoryContainer);
+            //Close other panel if it is expanded
+            if (currentPanel == panelInventoryContainer && isSubMenuExpanded)
+            {
+                panelOrderContainer.Height = 0;
+                panelCategoryContainer.Height = 0;
+            }
+        }
+        private void buttonCategoryManagement_Click(object sender, EventArgs e)
+        {
+            toggleSubmenu(panelCategoryContainer);
+            //Close other panel if it is expanded
+            if (currentPanel == panelCategoryContainer && isSubMenuExpanded)
+            {
+                panelOrderContainer.Height = 0;
+                panelInventoryContainer.Height = 0;
+            }
+        }
+        private void buttonOrderManagement_Click(object sender, EventArgs e)
+        {
+            toggleSubmenu(panelOrderContainer);
+            //Close other panel if it is expanded
+            if (currentPanel == panelOrderContainer && isSubMenuExpanded)
+            {
+                panelInventoryContainer.Height = 0;
+                panelCategoryContainer.Height = 0;
+            }
         }
     }
 }

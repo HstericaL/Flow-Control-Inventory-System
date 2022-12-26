@@ -33,16 +33,16 @@
             this.panelParent = new System.Windows.Forms.Panel();
             this.panelChild = new System.Windows.Forms.Panel();
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelOrderContainer = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.buttonOrderManagement = new System.Windows.Forms.Button();
             this.panelCategoryContainer = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.buttonCategoryManagement = new System.Windows.Forms.Button();
             this.panelInventoryContainer = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -73,7 +73,7 @@
             this.timerMenu = new System.Windows.Forms.Timer(this.components);
             this.panelParent.SuspendLayout();
             this.panelLeft.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panelOrderContainer.SuspendLayout();
             this.panelCategoryContainer.SuspendLayout();
             this.panelInventoryContainer.SuspendLayout();
             this.toolStripTop.SuspendLayout();
@@ -106,7 +106,7 @@
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.Color.White;
-            this.panelLeft.Controls.Add(this.panel3);
+            this.panelLeft.Controls.Add(this.panelOrderContainer);
             this.panelLeft.Controls.Add(this.panelCategoryContainer);
             this.panelLeft.Controls.Add(this.panelInventoryContainer);
             this.panelLeft.Controls.Add(this.label1);
@@ -116,20 +116,20 @@
             this.panelLeft.Size = new System.Drawing.Size(250, 461);
             this.panelLeft.TabIndex = 3;
             // 
-            // panel3
+            // panelOrderContainer
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.panel3.Controls.Add(this.button8);
-            this.panel3.Controls.Add(this.button9);
-            this.panel3.Controls.Add(this.button10);
-            this.panel3.Controls.Add(this.button11);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 75);
-            this.panel3.MaximumSize = new System.Drawing.Size(244, 100);
-            this.panel3.MinimumSize = new System.Drawing.Size(244, 25);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(244, 25);
-            this.panel3.TabIndex = 3;
+            this.panelOrderContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.panelOrderContainer.Controls.Add(this.button8);
+            this.panelOrderContainer.Controls.Add(this.button9);
+            this.panelOrderContainer.Controls.Add(this.button10);
+            this.panelOrderContainer.Controls.Add(this.buttonOrderManagement);
+            this.panelOrderContainer.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelOrderContainer.Location = new System.Drawing.Point(0, 75);
+            this.panelOrderContainer.MaximumSize = new System.Drawing.Size(244, 100);
+            this.panelOrderContainer.MinimumSize = new System.Drawing.Size(244, 25);
+            this.panelOrderContainer.Name = "panelOrderContainer";
+            this.panelOrderContainer.Size = new System.Drawing.Size(244, 25);
+            this.panelOrderContainer.TabIndex = 3;
             // 
             // button8
             // 
@@ -176,20 +176,21 @@
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // buttonOrderManagement
             // 
-            this.button11.BackColor = System.Drawing.Color.White;
-            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(0, 0);
-            this.button11.Name = "button11";
-            this.button11.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button11.Size = new System.Drawing.Size(244, 25);
-            this.button11.TabIndex = 0;
-            this.button11.Text = "Order Management";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.UseVisualStyleBackColor = false;
+            this.buttonOrderManagement.BackColor = System.Drawing.Color.White;
+            this.buttonOrderManagement.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonOrderManagement.FlatAppearance.BorderSize = 0;
+            this.buttonOrderManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOrderManagement.Location = new System.Drawing.Point(0, 0);
+            this.buttonOrderManagement.Name = "buttonOrderManagement";
+            this.buttonOrderManagement.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonOrderManagement.Size = new System.Drawing.Size(244, 25);
+            this.buttonOrderManagement.TabIndex = 0;
+            this.buttonOrderManagement.Text = "Order Management";
+            this.buttonOrderManagement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonOrderManagement.UseVisualStyleBackColor = false;
+            this.buttonOrderManagement.Click += new System.EventHandler(this.buttonOrderManagement_Click);
             // 
             // panelCategoryContainer
             // 
@@ -197,7 +198,7 @@
             this.panelCategoryContainer.Controls.Add(this.button1);
             this.panelCategoryContainer.Controls.Add(this.button5);
             this.panelCategoryContainer.Controls.Add(this.button6);
-            this.panelCategoryContainer.Controls.Add(this.button7);
+            this.panelCategoryContainer.Controls.Add(this.buttonCategoryManagement);
             this.panelCategoryContainer.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelCategoryContainer.Location = new System.Drawing.Point(0, 50);
             this.panelCategoryContainer.MaximumSize = new System.Drawing.Size(244, 100);
@@ -251,20 +252,21 @@
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // buttonCategoryManagement
             // 
-            this.button7.BackColor = System.Drawing.Color.White;
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(0, 0);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(244, 25);
-            this.button7.TabIndex = 0;
-            this.button7.Text = "Category Management";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = false;
+            this.buttonCategoryManagement.BackColor = System.Drawing.Color.White;
+            this.buttonCategoryManagement.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonCategoryManagement.FlatAppearance.BorderSize = 0;
+            this.buttonCategoryManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCategoryManagement.Location = new System.Drawing.Point(0, 0);
+            this.buttonCategoryManagement.Name = "buttonCategoryManagement";
+            this.buttonCategoryManagement.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonCategoryManagement.Size = new System.Drawing.Size(244, 25);
+            this.buttonCategoryManagement.TabIndex = 0;
+            this.buttonCategoryManagement.Text = "Category Management";
+            this.buttonCategoryManagement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCategoryManagement.UseVisualStyleBackColor = false;
+            this.buttonCategoryManagement.Click += new System.EventHandler(this.buttonCategoryManagement_Click);
             // 
             // panelInventoryContainer
             // 
@@ -589,7 +591,7 @@
             // 
             // timerMenu
             // 
-            this.timerMenu.Interval = 10;
+            this.timerMenu.Interval = 1;
             this.timerMenu.Tick += new System.EventHandler(this.timerMenu_Tick);
             // 
             // FormMenu
@@ -608,7 +610,7 @@
             this.Resize += new System.EventHandler(this.FormMenu_Resize);
             this.panelParent.ResumeLayout(false);
             this.panelLeft.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.panelOrderContainer.ResumeLayout(false);
             this.panelCategoryContainer.ResumeLayout(false);
             this.panelInventoryContainer.ResumeLayout(false);
             this.toolStripTop.ResumeLayout(false);
@@ -652,15 +654,15 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Timer timerMenu;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelOrderContainer;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button buttonOrderManagement;
         private System.Windows.Forms.Panel panelCategoryContainer;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button buttonCategoryManagement;
     }
 }
