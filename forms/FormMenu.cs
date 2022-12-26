@@ -165,7 +165,7 @@ namespace Flow_Control_Inventory_System.forms
             //Close other panel if it is expanded
             if (currentPanel == panelCategoryContainer && isSubMenuExpanded)
             {
-                panelOrderContainer.Height = 0;
+                panelOrderContainer.Height = 0; //this mnust be removed
                 panelInventoryContainer.Height = 0;
             }
         }
