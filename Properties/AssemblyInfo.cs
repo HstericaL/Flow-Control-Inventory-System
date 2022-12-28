@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Flow-Control-Inventory-System")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Flow Control Inventory System")]
+[assembly: AssemblyDescription("A 'Flow Control Inventory System' that uses .NET Framework 4.8.1 instead of .NET 6")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Flow Control")]
-[assembly: AssemblyProduct("Flow-Control-Inventory-System")]
+[assembly: AssemblyProduct("Inventory System")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

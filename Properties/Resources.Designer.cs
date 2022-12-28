@@ -161,6 +161,26 @@ namespace Flow_Control_Inventory_System.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Raleway_Bold {
+            get {
+                object obj = ResourceManager.GetObject("Raleway_Bold", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Raleway_Regular {
+            get {
+                object obj = ResourceManager.GetObject("Raleway_Regular", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap remove_category_icon {
@@ -187,6 +207,16 @@ namespace Flow_Control_Inventory_System.Properties {
             get {
                 object obj = ResourceManager.GetObject("remove-user-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] SegoeIcons {
+            get {
+                object obj = ResourceManager.GetObject("SegoeIcons", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         

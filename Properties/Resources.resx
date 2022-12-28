@@ -160,4 +160,13 @@
   <data name="add-item-in-cart-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\icons\add-item-in-cart-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Raleway_Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\fonts\raleway-bold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Raleway_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\fonts\raleway-regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SegoeIcons" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\fonts\segoeicons.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
