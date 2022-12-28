@@ -235,5 +235,10 @@ namespace Flow_Control_Inventory_System.forms
         {
             openChildForm(new FormInventory());
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormCategory());
+        }
     }
 }

@@ -35,7 +35,7 @@
             this.productidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productdescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productcategoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.category_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productquantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productpriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productaddedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,7 +60,7 @@
             this.productidDataGridViewTextBoxColumn,
             this.productnameDataGridViewTextBoxColumn,
             this.productdescriptionDataGridViewTextBoxColumn,
-            this.productcategoryDataGridViewTextBoxColumn,
+            this.category_name,
             this.productquantityDataGridViewTextBoxColumn,
             this.productpriceDataGridViewTextBoxColumn,
             this.productaddedDataGridViewTextBoxColumn});
@@ -84,6 +84,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewInventory.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewInventory.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.dataGridViewInventory.Size = new System.Drawing.Size(710, 289);
             this.dataGridViewInventory.TabIndex = 0;
             // 
@@ -111,13 +112,12 @@
             this.productdescriptionDataGridViewTextBoxColumn.Name = "productdescriptionDataGridViewTextBoxColumn";
             this.productdescriptionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // productcategoryDataGridViewTextBoxColumn
+            // category_name
             // 
-            this.productcategoryDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.productcategoryDataGridViewTextBoxColumn.DataPropertyName = "product_category";
-            this.productcategoryDataGridViewTextBoxColumn.HeaderText = "Product Category";
-            this.productcategoryDataGridViewTextBoxColumn.Name = "productcategoryDataGridViewTextBoxColumn";
-            this.productcategoryDataGridViewTextBoxColumn.ReadOnly = true;
+            this.category_name.DataPropertyName = "category_name";
+            this.category_name.HeaderText = "Category";
+            this.category_name.Name = "category_name";
+            this.category_name.ReadOnly = true;
             // 
             // productquantityDataGridViewTextBoxColumn
             // 
@@ -183,13 +183,13 @@
         private System.Windows.Forms.DataGridView dataGridViewInventory;
         private database.FlowControl_DataSet flowControl_DataSet;
         private System.Windows.Forms.BindingSource inventoryBindingSource;
-        private database.FlowControl_DataSetTableAdapters.inventoryTableAdapter inventoryTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn productidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productdescriptionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productcategoryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn category_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn productquantityDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productpriceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productaddedDataGridViewTextBoxColumn;
+        private database.FlowControl_DataSetTableAdapters.inventoryTableAdapter inventoryTableAdapter;
     }
 }

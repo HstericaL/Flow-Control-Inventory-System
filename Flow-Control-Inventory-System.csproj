@@ -102,6 +102,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FlowControl_DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="forms\FormCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormCategory.Designer.cs">
+      <DependentUpon>FormCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\FormInventory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="forms\FormCategory.resx">
+      <DependentUpon>FormCategory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\FormInventory.resx">
       <DependentUpon>FormInventory.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,7 +164,6 @@
     <None Include="database\FlowControl_DataSet.xss">
       <DependentUpon>FlowControl_DataSet.xsd</DependentUpon>
     </None>
-    <None Include="Flow-Control-Inventory-System_TemporaryKey.pfx" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
