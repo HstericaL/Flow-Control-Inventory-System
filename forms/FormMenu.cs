@@ -27,6 +27,19 @@ namespace Flow_Control_Inventory_System.forms
         //private variables
         private int borderSize = 2; //Border size
 
+        //Open Child Form
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.Dock = DockStyle.Fill;
+            panelChild.Controls.Add(childForm);
+            childForm.Show();
+        }
+
         //timerclock
         private void timerDateTime_Tick(object sender, EventArgs e)
         {
@@ -106,7 +119,6 @@ namespace Flow_Control_Inventory_System.forms
         private bool isSubMenuExpanded;
         private int subMenuHeight;
         private Panel currentPanel;
-
         private void timerMenu_Tick(object sender, EventArgs e)
         {
             if (isSubMenuExpanded)
@@ -217,6 +229,11 @@ namespace Flow_Control_Inventory_System.forms
             panelInventoryContainer.Height = 0;
             panelCategoryContainer.Height = 0;
             panelOrderContainer.Height = 0;
+        }
+
+        private void buttonShowProduct_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormInventory());
         }
     }
 }
