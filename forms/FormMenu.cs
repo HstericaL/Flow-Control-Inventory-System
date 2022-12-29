@@ -171,12 +171,14 @@ namespace Flow_Control_Inventory_System.forms
                 buttonCategoryManagement.ForeColor = Color.FromArgb(100, 109, 119);
                 buttonOrderManagement.ForeColor = Color.FromArgb(100, 109, 119);
                 buttonDashboard.ForeColor = Color.FromArgb(100, 109, 119);
+                buttonCustomerManagement.ForeColor = Color.FromArgb(100, 109, 119);
 
                 //set color of current button
                 buttonInventoryManagement.ForeColor = Color.FromArgb(52, 132, 240);
 
                 panelOrderContainer.Height = 0;
                 panelCategoryContainer.Height = 0;
+                panelCustomerContainer.Height = 0;
             }
         }
         private void buttonCategoryManagement_Click(object sender, EventArgs e)
@@ -189,12 +191,14 @@ namespace Flow_Control_Inventory_System.forms
                 buttonInventoryManagement.ForeColor = Color.FromArgb(100, 109, 119);
                 buttonOrderManagement.ForeColor = Color.FromArgb(100, 109, 119);
                 buttonDashboard.ForeColor = Color.FromArgb(100, 109, 119);
+                buttonCustomerManagement.ForeColor = Color.FromArgb(100, 109, 119);
 
                 //set color of current button
                 buttonCategoryManagement.ForeColor = Color.FromArgb(52, 132, 240);
 
                 panelOrderContainer.Height = 0;
                 panelInventoryContainer.Height = 0;
+                panelCustomerContainer.Height = 0;
             }
         }
         private void buttonOrderManagement_Click(object sender, EventArgs e)
@@ -207,12 +211,34 @@ namespace Flow_Control_Inventory_System.forms
                 buttonCategoryManagement.ForeColor = Color.FromArgb(100, 109, 119);
                 buttonInventoryManagement.ForeColor = Color.FromArgb(100, 109, 119);
                 buttonDashboard.ForeColor = Color.FromArgb(100, 109, 119);
+                buttonCustomerManagement.ForeColor = Color.FromArgb(100, 109, 119);
 
                 //set color of current button
                 buttonOrderManagement.ForeColor = Color.FromArgb(52, 132, 240);
 
                 panelInventoryContainer.Height = 0;
                 panelCategoryContainer.Height = 0;
+                panelCustomerContainer.Height = 0;
+            }
+        }
+        private void buttonCustomerManagement_Click(object sender, EventArgs e)
+        {
+            toggleSubmenu(panelCustomerContainer);
+            //Close other panel if it is expanded
+            if (currentPanel == panelCustomerContainer && isSubMenuExpanded)
+            {
+                //Set color of other button
+                buttonCategoryManagement.ForeColor = Color.FromArgb(100, 109, 119);
+                buttonInventoryManagement.ForeColor = Color.FromArgb(100, 109, 119);
+                buttonDashboard.ForeColor = Color.FromArgb(100, 109, 119);
+                buttonOrderManagement.ForeColor = Color.FromArgb(100, 109, 119);
+
+                //set color of current button
+                buttonCustomerManagement.ForeColor = Color.FromArgb(52, 132, 240);
+
+                panelInventoryContainer.Height = 0;
+                panelCategoryContainer.Height = 0;
+                panelOrderContainer.Height = 0;
             }
         }
 
@@ -222,6 +248,7 @@ namespace Flow_Control_Inventory_System.forms
             buttonCategoryManagement.ForeColor = Color.FromArgb(100, 109, 119);
             buttonInventoryManagement.ForeColor = Color.FromArgb(100, 109, 119);
             buttonOrderManagement.ForeColor = Color.FromArgb(100, 109, 119);
+            buttonCustomerManagement.ForeColor = Color.FromArgb(100, 109, 119);
 
             //set color of current button
             buttonDashboard.ForeColor = Color.FromArgb(52, 132, 240);
