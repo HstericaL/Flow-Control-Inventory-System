@@ -7,7 +7,7 @@
 ![](https://i.imgur.com/waxVImv.png)
 
 <p align="center"> A personal project about 'Inventory System'.</p>
-<p align="center">This project will use c# and a database('to be picked yet..')</p>
+<p align="center">This project will use Microsoft's C# Language and Microsoft Access Database.</p>
 
 ![](https://i.imgur.com/waxVImv.png)
 
@@ -43,8 +43,9 @@ Here are the table, datatype and variabel names:
 
 | **category** |  |
 | ----------- | ----------- |
-| **category_id** | ***int*** |
-| category_name | varchar |
+| **category_name** | ***varchar*** |
+| category_id | int |
+
 
 
 
