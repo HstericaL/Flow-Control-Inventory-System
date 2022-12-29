@@ -11,7 +11,10 @@
 
 ![](https://i.imgur.com/waxVImv.png)
 
-## <center/>Development
+## <center/>Development / Requirements
+
+<p>Visual Studio 2022 or lower</p>
+<p>.Net Framework 4.8.1</p>
 
 Clone the repository, and start the application
 
