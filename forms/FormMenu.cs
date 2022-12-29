@@ -262,10 +262,27 @@ namespace Flow_Control_Inventory_System.forms
         {
             openChildForm(new FormInventory());
         }
-
-        private void button6_Click(object sender, EventArgs e)
+        private void buttonShowCategories_Click(object sender, EventArgs e)
         {
             openChildForm(new FormCategory());
         }
+
+        // Sign-out user button
+        private void buttonSignout_Click(object sender, EventArgs e)
+        {
+            // prompt the user before signing out
+            DialogResult result = MessageBox.Show("Are you sure you want to sign out?", "Sign Out", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                FormLogin formLogin = new FormLogin();
+                formLogin.Show();
+                this.Close();
+            }
+            else
+            {
+                // do nothing
+            }
+        }
+
     }
 }

@@ -146,48 +146,48 @@
   <xs:element name="FlowControl_DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="FlowControl_DataSet" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="FlowControl_DataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="inventory" msprop:Generator_RowEvHandlerName="inventoryRowChangeEventHandler" msprop:Generator_RowDeletedName="inventoryRowDeleted" msprop:Generator_RowDeletingName="inventoryRowDeleting" msprop:Generator_RowEvArgName="inventoryRowChangeEvent" msprop:Generator_TablePropName="inventory" msprop:Generator_RowChangedName="inventoryRowChanged" msprop:Generator_RowChangingName="inventoryRowChanging" msprop:Generator_TableClassName="inventoryDataTable" msprop:Generator_RowClassName="inventoryRow" msprop:Generator_TableVarName="tableinventory" msprop:Generator_UserTableName="inventory">
+        <xs:element name="inventory" msprop:Generator_RowClassName="inventoryRow" msprop:Generator_RowEvHandlerName="inventoryRowChangeEventHandler" msprop:Generator_RowDeletedName="inventoryRowDeleted" msprop:Generator_RowDeletingName="inventoryRowDeleting" msprop:Generator_RowEvArgName="inventoryRowChangeEvent" msprop:Generator_TablePropName="inventory" msprop:Generator_RowChangedName="inventoryRowChanged" msprop:Generator_UserTableName="inventory" msprop:Generator_RowChangingName="inventoryRowChanging" msprop:Generator_TableClassName="inventoryDataTable" msprop:Generator_TableVarName="tableinventory">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="product_id" msprop:Generator_ColumnPropNameInRow="product_id" msprop:Generator_ColumnPropNameInTable="product_idColumn" msprop:Generator_ColumnVarNameInTable="columnproduct_id" msprop:Generator_UserColumnName="product_id" type="xs:int" />
-              <xs:element name="product_name" msprop:Generator_ColumnPropNameInRow="product_name" msprop:Generator_ColumnPropNameInTable="product_nameColumn" msprop:Generator_ColumnVarNameInTable="columnproduct_name" msprop:Generator_UserColumnName="product_name" minOccurs="0">
+              <xs:element name="product_id" msprop:Generator_UserColumnName="product_id" msprop:Generator_ColumnPropNameInTable="product_idColumn" msprop:Generator_ColumnPropNameInRow="product_id" msprop:Generator_ColumnVarNameInTable="columnproduct_id" type="xs:int" />
+              <xs:element name="product_name" msprop:Generator_UserColumnName="product_name" msprop:Generator_ColumnPropNameInTable="product_nameColumn" msprop:Generator_ColumnPropNameInRow="product_name" msprop:Generator_ColumnVarNameInTable="columnproduct_name" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="product_description" msprop:Generator_ColumnPropNameInRow="product_description" msprop:Generator_ColumnPropNameInTable="product_descriptionColumn" msprop:Generator_ColumnVarNameInTable="columnproduct_description" msprop:Generator_UserColumnName="product_description" minOccurs="0">
+              <xs:element name="product_description" msprop:Generator_UserColumnName="product_description" msprop:Generator_ColumnPropNameInTable="product_descriptionColumn" msprop:Generator_ColumnPropNameInRow="product_description" msprop:Generator_ColumnVarNameInTable="columnproduct_description" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="category_name" msprop:Generator_ColumnPropNameInRow="category_name" msprop:Generator_ColumnPropNameInTable="category_nameColumn" msprop:Generator_ColumnVarNameInTable="columncategory_name" msprop:Generator_UserColumnName="category_name" minOccurs="0">
+              <xs:element name="category_name" msprop:Generator_UserColumnName="category_name" msprop:Generator_ColumnPropNameInTable="category_nameColumn" msprop:Generator_ColumnPropNameInRow="category_name" msprop:Generator_ColumnVarNameInTable="columncategory_name" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="product_quantity" msprop:Generator_ColumnPropNameInRow="product_quantity" msprop:Generator_ColumnPropNameInTable="product_quantityColumn" msprop:Generator_ColumnVarNameInTable="columnproduct_quantity" msprop:Generator_UserColumnName="product_quantity" type="xs:int" minOccurs="0" />
-              <xs:element name="product_price" msprop:Generator_ColumnPropNameInRow="product_price" msprop:Generator_ColumnPropNameInTable="product_priceColumn" msprop:Generator_ColumnVarNameInTable="columnproduct_price" msprop:Generator_UserColumnName="product_price" type="xs:int" minOccurs="0" />
-              <xs:element name="product_added" msprop:Generator_ColumnPropNameInRow="product_added" msprop:Generator_ColumnPropNameInTable="product_addedColumn" msprop:Generator_ColumnVarNameInTable="columnproduct_added" msprop:Generator_UserColumnName="product_added" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="product_quantity" msprop:Generator_UserColumnName="product_quantity" msprop:Generator_ColumnPropNameInTable="product_quantityColumn" msprop:Generator_ColumnPropNameInRow="product_quantity" msprop:Generator_ColumnVarNameInTable="columnproduct_quantity" type="xs:int" minOccurs="0" />
+              <xs:element name="product_price" msprop:Generator_UserColumnName="product_price" msprop:Generator_ColumnPropNameInTable="product_priceColumn" msprop:Generator_ColumnPropNameInRow="product_price" msprop:Generator_ColumnVarNameInTable="columnproduct_price" type="xs:int" minOccurs="0" />
+              <xs:element name="product_added" msprop:Generator_UserColumnName="product_added" msprop:Generator_ColumnPropNameInTable="product_addedColumn" msprop:Generator_ColumnPropNameInRow="product_added" msprop:Generator_ColumnVarNameInTable="columnproduct_added" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="category" msprop:Generator_RowEvHandlerName="categoryRowChangeEventHandler" msprop:Generator_RowDeletedName="categoryRowDeleted" msprop:Generator_RowDeletingName="categoryRowDeleting" msprop:Generator_RowEvArgName="categoryRowChangeEvent" msprop:Generator_TablePropName="category" msprop:Generator_RowChangedName="categoryRowChanged" msprop:Generator_RowChangingName="categoryRowChanging" msprop:Generator_TableClassName="categoryDataTable" msprop:Generator_RowClassName="categoryRow" msprop:Generator_TableVarName="tablecategory" msprop:Generator_UserTableName="category">
+        <xs:element name="category" msprop:Generator_RowClassName="categoryRow" msprop:Generator_RowEvHandlerName="categoryRowChangeEventHandler" msprop:Generator_RowDeletedName="categoryRowDeleted" msprop:Generator_RowDeletingName="categoryRowDeleting" msprop:Generator_RowEvArgName="categoryRowChangeEvent" msprop:Generator_TablePropName="category" msprop:Generator_RowChangedName="categoryRowChanged" msprop:Generator_UserTableName="category" msprop:Generator_RowChangingName="categoryRowChanging" msprop:Generator_TableClassName="categoryDataTable" msprop:Generator_TableVarName="tablecategory">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="category_name" msprop:Generator_ColumnPropNameInRow="category_name" msprop:Generator_ColumnPropNameInTable="category_nameColumn" msprop:Generator_ColumnVarNameInTable="columncategory_name" msprop:Generator_UserColumnName="category_name">
+              <xs:element name="category_name" msprop:Generator_UserColumnName="category_name" msprop:Generator_ColumnPropNameInTable="category_nameColumn" msprop:Generator_ColumnPropNameInRow="category_name" msprop:Generator_ColumnVarNameInTable="columncategory_name">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="category_id" msprop:Generator_ColumnPropNameInRow="category_id" msprop:Generator_ColumnPropNameInTable="category_idColumn" msprop:Generator_ColumnVarNameInTable="columncategory_id" msprop:Generator_UserColumnName="category_id" type="xs:int" minOccurs="0" />
+              <xs:element name="category_id" msprop:Generator_UserColumnName="category_id" msprop:Generator_ColumnPropNameInTable="category_idColumn" msprop:Generator_ColumnPropNameInRow="category_id" msprop:Generator_ColumnVarNameInTable="columncategory_id" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -204,7 +204,7 @@
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="categoryinventory" msdata:parent="category" msdata:child="inventory" msdata:parentkey="category_name" msdata:childkey="category_name" msprop:Generator_UserParentTable="category" msprop:Generator_UserChildTable="inventory" msprop:Generator_RelationVarName="relationcategoryinventory" msprop:Generator_UserRelationName="categoryinventory" msprop:Generator_ChildPropName="GetinventoryRows" msprop:Generator_ParentPropName="categoryRow" />
+      <msdata:Relationship name="categoryinventory" msdata:parent="category" msdata:child="inventory" msdata:parentkey="category_name" msdata:childkey="category_name" msprop:Generator_UserParentTable="category" msprop:Generator_UserChildTable="inventory" msprop:Generator_RelationVarName="relationcategoryinventory" msprop:Generator_ChildPropName="GetinventoryRows" msprop:Generator_ParentPropName="categoryRow" msprop:Generator_UserRelationName="categoryinventory" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

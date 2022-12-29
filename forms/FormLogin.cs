@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Flow_Control_Inventory_System.forms.methods;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +9,9 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Flow_Control_Inventory_System.forms.methods;
+using System.Security.Cryptography;
+using System.Data.OleDb;
 
 namespace Flow_Control_Inventory_System.forms
 {
@@ -55,19 +59,38 @@ namespace Flow_Control_Inventory_System.forms
         }
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            if (textBoxUsername.Text == "admin" && textBoxPassword.Text == "admin")
+            // Get the username, password, and role from the input fields
+            string username = textBoxUsername.Text;
+            string password = textBoxPassword.Text;
+
+            // Connect to database - LoginUser
+            AuthenticationManagement authentication = new AuthenticationManagement();
+            if (authentication.LoginUser(username, password))
             {
+                MessageBox.Show(username + " logged in successfully!" );
+
+                // show FormMain
                 FormMenu formMenu = new FormMenu();
-                MessageBox.Show("Administrative login successful!", "Administrator");
+                formMenu.Show();
+
                 this.Hide();
-                formMenu.ShowDialog();
-                this.Close();
             }
             else
             {
-                textBoxPassword.Text = "";
-                MessageBox.Show("Wrong username or password.", "Alert");
+                MessageBox.Show("Incorrect username or password!");
+                textBoxPassword.Clear();
             }
+        }
+
+        private void buttonRegister_Click(object sender, EventArgs e)
+        {
+            // Get the username, password, and role from the input fields
+            string username = textBoxUsername.Text;
+            string password = textBoxPassword.Text;
+
+            // Connect to database - RegisterUser
+            AuthenticationManagement authentication = new AuthenticationManagement();
+            authentication.RegisterUser(username, password);
         }
     }
 }

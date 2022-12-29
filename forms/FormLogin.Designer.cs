@@ -44,6 +44,7 @@
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.labelSubtitle = new System.Windows.Forms.Label();
             this.labelTitle = new System.Windows.Forms.Label();
+            this.buttonRegister = new System.Windows.Forms.Button();
             this.panelTitleBar.SuspendLayout();
             this.panelLeftTitle.SuspendLayout();
             this.panelRight.SuspendLayout();
@@ -90,6 +91,7 @@
             // panelRight
             // 
             this.panelRight.BackColor = System.Drawing.Color.White;
+            this.panelRight.Controls.Add(this.buttonRegister);
             this.panelRight.Controls.Add(this.label6);
             this.panelRight.Controls.Add(this.buttonLogin);
             this.panelRight.Controls.Add(this.labelPassword);
@@ -123,7 +125,7 @@
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogin.Font = new System.Drawing.Font("Raleway SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogin.ForeColor = System.Drawing.Color.White;
-            this.buttonLogin.Location = new System.Drawing.Point(48, 315);
+            this.buttonLogin.Location = new System.Drawing.Point(48, 271);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(215, 40);
             this.buttonLogin.TabIndex = 6;
@@ -137,7 +139,7 @@
             this.labelPassword.Enabled = false;
             this.labelPassword.Font = new System.Drawing.Font("Raleway", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
-            this.labelPassword.Location = new System.Drawing.Point(48, 197);
+            this.labelPassword.Location = new System.Drawing.Point(48, 183);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(67, 18);
             this.labelPassword.TabIndex = 5;
@@ -147,7 +149,7 @@
             // textBoxPassword
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassword.Location = new System.Drawing.Point(48, 217);
+            this.textBoxPassword.Location = new System.Drawing.Point(48, 203);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(215, 23);
@@ -159,7 +161,7 @@
             this.labelUsername.Enabled = false;
             this.labelUsername.Font = new System.Drawing.Font("Raleway", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
-            this.labelUsername.Location = new System.Drawing.Point(48, 130);
+            this.labelUsername.Location = new System.Drawing.Point(48, 116);
             this.labelUsername.Name = "labelUsername";
             this.labelUsername.Size = new System.Drawing.Size(72, 18);
             this.labelUsername.TabIndex = 3;
@@ -181,7 +183,7 @@
             // textBoxUsername
             // 
             this.textBoxUsername.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUsername.Location = new System.Drawing.Point(48, 150);
+            this.textBoxUsername.Location = new System.Drawing.Point(48, 136);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(215, 23);
             this.textBoxUsername.TabIndex = 0;
@@ -232,6 +234,21 @@
             this.labelTitle.Text = "Flow Control";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // buttonRegister
+            // 
+            this.buttonRegister.BackColor = System.Drawing.Color.Transparent;
+            this.buttonRegister.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(132)))), ((int)(((byte)(240)))));
+            this.buttonRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRegister.Font = new System.Drawing.Font("Raleway SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(132)))), ((int)(((byte)(240)))));
+            this.buttonRegister.Location = new System.Drawing.Point(48, 317);
+            this.buttonRegister.Name = "buttonRegister";
+            this.buttonRegister.Size = new System.Drawing.Size(215, 40);
+            this.buttonRegister.TabIndex = 8;
+            this.buttonRegister.Text = "Register";
+            this.buttonRegister.UseVisualStyleBackColor = false;
+            this.buttonRegister.Click += new System.EventHandler(this.buttonRegister_Click);
+            // 
             // FormLogin
             // 
             this.AcceptButton = this.buttonLogin;
@@ -276,5 +293,6 @@
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Label labelSubtitle;
         private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Button buttonRegister;
     }
 }
