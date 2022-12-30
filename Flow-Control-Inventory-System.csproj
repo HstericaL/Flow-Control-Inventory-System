@@ -175,6 +175,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="README.md" />
     <None Include="Resources\Raleway-Bold.ttf" />
     <None Include="Resources\Raleway-Regular.ttf" />
     <None Include="Resources\SegoeIcons.ttf" />

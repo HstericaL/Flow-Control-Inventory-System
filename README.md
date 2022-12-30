@@ -34,12 +34,17 @@ Here are the table, datatype and variabel names:
 
 <tr><td>
 
+| **users** |  |
+| ----------- | ----------- |
+| **user_name** | ***varchar*** |
+| user_password | varchar |
+
 | **inventory** |  |
 | ----------- | ----------- |
 | **product_id** | ***int*** |
 | product_name | varchar |
 | product_description | text |
-| product_category | varchar |
+| category_name | varchar |
 | product_quantity | int |
 | product_price | decimal(10,2) |
 | product_added | date |
