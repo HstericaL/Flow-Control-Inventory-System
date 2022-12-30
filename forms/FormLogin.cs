@@ -67,13 +67,13 @@ namespace Flow_Control_Inventory_System.forms
             AuthenticationManagement authentication = new AuthenticationManagement();
             if (authentication.LoginUser(username, password))
             {
-                MessageBox.Show(username + " logged in successfully!" );
+                    MessageBox.Show(username + " logged in successfully as Administrator!");
 
-                // show FormMain
-                FormMenu formMenu = new FormMenu();
-                formMenu.Show();
+                    // show FormMain
+                    FormMenu formMenu = new FormMenu();
+                    formMenu.Show();
 
-                this.Hide();
+                    this.Hide();
             }
             else
             {

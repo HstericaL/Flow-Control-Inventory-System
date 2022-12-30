@@ -33,6 +33,7 @@
             this.panelLeftTitle = new System.Windows.Forms.Panel();
             this.ButtonExit = new System.Windows.Forms.Button();
             this.panelRight = new System.Windows.Forms.Panel();
+            this.buttonRegister = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.labelPassword = new System.Windows.Forms.Label();
@@ -44,7 +45,6 @@
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.labelSubtitle = new System.Windows.Forms.Label();
             this.labelTitle = new System.Windows.Forms.Label();
-            this.buttonRegister = new System.Windows.Forms.Button();
             this.panelTitleBar.SuspendLayout();
             this.panelLeftTitle.SuspendLayout();
             this.panelRight.SuspendLayout();
@@ -105,6 +105,21 @@
             this.panelRight.Size = new System.Drawing.Size(300, 421);
             this.panelRight.TabIndex = 2;
             // 
+            // buttonRegister
+            // 
+            this.buttonRegister.BackColor = System.Drawing.Color.Transparent;
+            this.buttonRegister.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(132)))), ((int)(((byte)(240)))));
+            this.buttonRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRegister.Font = new System.Drawing.Font("Raleway SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(132)))), ((int)(((byte)(240)))));
+            this.buttonRegister.Location = new System.Drawing.Point(48, 317);
+            this.buttonRegister.Name = "buttonRegister";
+            this.buttonRegister.Size = new System.Drawing.Size(215, 40);
+            this.buttonRegister.TabIndex = 8;
+            this.buttonRegister.Text = "Register";
+            this.buttonRegister.UseVisualStyleBackColor = false;
+            this.buttonRegister.Click += new System.EventHandler(this.buttonRegister_Click);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -139,7 +154,7 @@
             this.labelPassword.Enabled = false;
             this.labelPassword.Font = new System.Drawing.Font("Raleway", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
-            this.labelPassword.Location = new System.Drawing.Point(48, 183);
+            this.labelPassword.Location = new System.Drawing.Point(48, 169);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(67, 18);
             this.labelPassword.TabIndex = 5;
@@ -148,11 +163,11 @@
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassword.Location = new System.Drawing.Point(48, 203);
+            this.textBoxPassword.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPassword.Location = new System.Drawing.Point(48, 189);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
-            this.textBoxPassword.Size = new System.Drawing.Size(215, 23);
+            this.textBoxPassword.Size = new System.Drawing.Size(215, 20);
             this.textBoxPassword.TabIndex = 2;
             // 
             // labelUsername
@@ -182,10 +197,10 @@
             // 
             // textBoxUsername
             // 
-            this.textBoxUsername.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUsername.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUsername.Location = new System.Drawing.Point(48, 136);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(215, 23);
+            this.textBoxUsername.Size = new System.Drawing.Size(215, 20);
             this.textBoxUsername.TabIndex = 0;
             // 
             // panelLeft
@@ -233,21 +248,6 @@
             this.labelTitle.TabIndex = 9;
             this.labelTitle.Text = "Flow Control";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // buttonRegister
-            // 
-            this.buttonRegister.BackColor = System.Drawing.Color.Transparent;
-            this.buttonRegister.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(132)))), ((int)(((byte)(240)))));
-            this.buttonRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRegister.Font = new System.Drawing.Font("Raleway SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(132)))), ((int)(((byte)(240)))));
-            this.buttonRegister.Location = new System.Drawing.Point(48, 317);
-            this.buttonRegister.Name = "buttonRegister";
-            this.buttonRegister.Size = new System.Drawing.Size(215, 40);
-            this.buttonRegister.TabIndex = 8;
-            this.buttonRegister.Text = "Register";
-            this.buttonRegister.UseVisualStyleBackColor = false;
-            this.buttonRegister.Click += new System.EventHandler(this.buttonRegister_Click);
             // 
             // FormLogin
             // 

@@ -35,27 +35,32 @@
             this.panelLeft = new System.Windows.Forms.Panel();
             this.panelSignoutContainer = new System.Windows.Forms.Panel();
             this.buttonSignout = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.panelInventoryContainer = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonRemoveProduct = new System.Windows.Forms.Button();
+            this.buttonAddProduct = new System.Windows.Forms.Button();
             this.buttonShowProduct = new System.Windows.Forms.Button();
             this.buttonInventoryManagement = new System.Windows.Forms.Button();
             this.panelCategoryContainer = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.buttonRemoveCategory = new System.Windows.Forms.Button();
+            this.buttonAddCategory = new System.Windows.Forms.Button();
             this.buttonShowCategories = new System.Windows.Forms.Button();
             this.buttonCategoryManagement = new System.Windows.Forms.Button();
             this.panelOrderContainer = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.buttonRemoveOrder = new System.Windows.Forms.Button();
+            this.buttonAddOrder = new System.Windows.Forms.Button();
+            this.buttonShowOrders = new System.Windows.Forms.Button();
             this.buttonOrderManagement = new System.Windows.Forms.Button();
             this.panelCustomerContainer = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.buttonRemoveCustomer = new System.Windows.Forms.Button();
+            this.buttonAddCustomer = new System.Windows.Forms.Button();
             this.buttonShowCustomer = new System.Windows.Forms.Button();
             this.buttonCustomerManagement = new System.Windows.Forms.Button();
+            this.panelUserContainer = new System.Windows.Forms.Panel();
+            this.buttonRemoveUser = new System.Windows.Forms.Button();
+            this.buttonAddUser = new System.Windows.Forms.Button();
+            this.buttonShowUsers = new System.Windows.Forms.Button();
+            this.buttonUserManagement = new System.Windows.Forms.Button();
             this.panelDashboardContainer = new System.Windows.Forms.Panel();
             this.buttonDashboard = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -87,11 +92,12 @@
             this.panelMain.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.panelSignoutContainer.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.flowLayoutPanel.SuspendLayout();
             this.panelInventoryContainer.SuspendLayout();
             this.panelCategoryContainer.SuspendLayout();
             this.panelOrderContainer.SuspendLayout();
             this.panelCustomerContainer.SuspendLayout();
+            this.panelUserContainer.SuspendLayout();
             this.panelDashboardContainer.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -127,7 +133,7 @@
             // 
             this.panelLeft.BackColor = System.Drawing.Color.White;
             this.panelLeft.Controls.Add(this.panelSignoutContainer);
-            this.panelLeft.Controls.Add(this.flowLayoutPanel1);
+            this.panelLeft.Controls.Add(this.flowLayoutPanel);
             this.panelLeft.Controls.Add(this.panelDashboardContainer);
             this.panelLeft.Controls.Add(this.panel2);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
@@ -163,26 +169,27 @@
             this.buttonSignout.UseVisualStyleBackColor = false;
             this.buttonSignout.Click += new System.EventHandler(this.buttonSignout_Click);
             // 
-            // flowLayoutPanel1
+            // flowLayoutPanel
             // 
-            this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.Controls.Add(this.panelInventoryContainer);
-            this.flowLayoutPanel1.Controls.Add(this.panelCategoryContainer);
-            this.flowLayoutPanel1.Controls.Add(this.panelOrderContainer);
-            this.flowLayoutPanel1.Controls.Add(this.panelCustomerContainer);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 125);
-            this.flowLayoutPanel1.MaximumSize = new System.Drawing.Size(250, 280);
-            this.flowLayoutPanel1.MinimumSize = new System.Drawing.Size(250, 100);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(250, 140);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutPanel.AutoSize = true;
+            this.flowLayoutPanel.Controls.Add(this.panelInventoryContainer);
+            this.flowLayoutPanel.Controls.Add(this.panelCategoryContainer);
+            this.flowLayoutPanel.Controls.Add(this.panelOrderContainer);
+            this.flowLayoutPanel.Controls.Add(this.panelCustomerContainer);
+            this.flowLayoutPanel.Controls.Add(this.panelUserContainer);
+            this.flowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel.Location = new System.Drawing.Point(0, 125);
+            this.flowLayoutPanel.MaximumSize = new System.Drawing.Size(250, 280);
+            this.flowLayoutPanel.MinimumSize = new System.Drawing.Size(250, 100);
+            this.flowLayoutPanel.Name = "flowLayoutPanel";
+            this.flowLayoutPanel.Size = new System.Drawing.Size(250, 175);
+            this.flowLayoutPanel.TabIndex = 0;
             // 
             // panelInventoryContainer
             // 
             this.panelInventoryContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.panelInventoryContainer.Controls.Add(this.button4);
-            this.panelInventoryContainer.Controls.Add(this.button3);
+            this.panelInventoryContainer.Controls.Add(this.buttonRemoveProduct);
+            this.panelInventoryContainer.Controls.Add(this.buttonAddProduct);
             this.panelInventoryContainer.Controls.Add(this.buttonShowProduct);
             this.panelInventoryContainer.Controls.Add(this.buttonInventoryManagement);
             this.panelInventoryContainer.Location = new System.Drawing.Point(0, 0);
@@ -194,39 +201,39 @@
             this.panelInventoryContainer.Size = new System.Drawing.Size(250, 25);
             this.panelInventoryContainer.TabIndex = 1;
             // 
-            // button4
+            // buttonRemoveProduct
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
-            this.button4.Location = new System.Drawing.Point(0, 75);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(250, 25);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Remove Product";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
+            this.buttonRemoveProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            this.buttonRemoveProduct.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonRemoveProduct.FlatAppearance.BorderSize = 0;
+            this.buttonRemoveProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRemoveProduct.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRemoveProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
+            this.buttonRemoveProduct.Location = new System.Drawing.Point(0, 75);
+            this.buttonRemoveProduct.Name = "buttonRemoveProduct";
+            this.buttonRemoveProduct.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.buttonRemoveProduct.Size = new System.Drawing.Size(250, 25);
+            this.buttonRemoveProduct.TabIndex = 3;
+            this.buttonRemoveProduct.Text = "Remove Product";
+            this.buttonRemoveProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonRemoveProduct.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // buttonAddProduct
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
-            this.button3.Location = new System.Drawing.Point(0, 50);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(250, 25);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Add Product";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
+            this.buttonAddProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            this.buttonAddProduct.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonAddProduct.FlatAppearance.BorderSize = 0;
+            this.buttonAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddProduct.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
+            this.buttonAddProduct.Location = new System.Drawing.Point(0, 50);
+            this.buttonAddProduct.Name = "buttonAddProduct";
+            this.buttonAddProduct.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.buttonAddProduct.Size = new System.Drawing.Size(250, 25);
+            this.buttonAddProduct.TabIndex = 2;
+            this.buttonAddProduct.Text = "Add Product";
+            this.buttonAddProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAddProduct.UseVisualStyleBackColor = false;
             // 
             // buttonShowProduct
             // 
@@ -268,8 +275,8 @@
             // panelCategoryContainer
             // 
             this.panelCategoryContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.panelCategoryContainer.Controls.Add(this.button1);
-            this.panelCategoryContainer.Controls.Add(this.button5);
+            this.panelCategoryContainer.Controls.Add(this.buttonRemoveCategory);
+            this.panelCategoryContainer.Controls.Add(this.buttonAddCategory);
             this.panelCategoryContainer.Controls.Add(this.buttonShowCategories);
             this.panelCategoryContainer.Controls.Add(this.buttonCategoryManagement);
             this.panelCategoryContainer.Location = new System.Drawing.Point(0, 35);
@@ -280,39 +287,39 @@
             this.panelCategoryContainer.Size = new System.Drawing.Size(250, 25);
             this.panelCategoryContainer.TabIndex = 2;
             // 
-            // button1
+            // buttonRemoveCategory
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
-            this.button1.Location = new System.Drawing.Point(0, 75);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(250, 25);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Remove Category";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonRemoveCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            this.buttonRemoveCategory.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonRemoveCategory.FlatAppearance.BorderSize = 0;
+            this.buttonRemoveCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRemoveCategory.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRemoveCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
+            this.buttonRemoveCategory.Location = new System.Drawing.Point(0, 75);
+            this.buttonRemoveCategory.Name = "buttonRemoveCategory";
+            this.buttonRemoveCategory.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.buttonRemoveCategory.Size = new System.Drawing.Size(250, 25);
+            this.buttonRemoveCategory.TabIndex = 3;
+            this.buttonRemoveCategory.Text = "Remove Category";
+            this.buttonRemoveCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonRemoveCategory.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // buttonAddCategory
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
-            this.button5.Location = new System.Drawing.Point(0, 50);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(250, 25);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Add Category";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
+            this.buttonAddCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            this.buttonAddCategory.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonAddCategory.FlatAppearance.BorderSize = 0;
+            this.buttonAddCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddCategory.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
+            this.buttonAddCategory.Location = new System.Drawing.Point(0, 50);
+            this.buttonAddCategory.Name = "buttonAddCategory";
+            this.buttonAddCategory.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.buttonAddCategory.Size = new System.Drawing.Size(250, 25);
+            this.buttonAddCategory.TabIndex = 2;
+            this.buttonAddCategory.Text = "Add Category";
+            this.buttonAddCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAddCategory.UseVisualStyleBackColor = false;
             // 
             // buttonShowCategories
             // 
@@ -353,9 +360,9 @@
             // panelOrderContainer
             // 
             this.panelOrderContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.panelOrderContainer.Controls.Add(this.button8);
-            this.panelOrderContainer.Controls.Add(this.button9);
-            this.panelOrderContainer.Controls.Add(this.button10);
+            this.panelOrderContainer.Controls.Add(this.buttonRemoveOrder);
+            this.panelOrderContainer.Controls.Add(this.buttonAddOrder);
+            this.panelOrderContainer.Controls.Add(this.buttonShowOrders);
             this.panelOrderContainer.Controls.Add(this.buttonOrderManagement);
             this.panelOrderContainer.Location = new System.Drawing.Point(0, 70);
             this.panelOrderContainer.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
@@ -365,56 +372,56 @@
             this.panelOrderContainer.Size = new System.Drawing.Size(250, 25);
             this.panelOrderContainer.TabIndex = 3;
             // 
-            // button8
+            // buttonRemoveOrder
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
-            this.button8.Location = new System.Drawing.Point(0, 75);
-            this.button8.Name = "button8";
-            this.button8.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(250, 25);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Remove Order";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = false;
+            this.buttonRemoveOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            this.buttonRemoveOrder.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonRemoveOrder.FlatAppearance.BorderSize = 0;
+            this.buttonRemoveOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRemoveOrder.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRemoveOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
+            this.buttonRemoveOrder.Location = new System.Drawing.Point(0, 75);
+            this.buttonRemoveOrder.Name = "buttonRemoveOrder";
+            this.buttonRemoveOrder.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.buttonRemoveOrder.Size = new System.Drawing.Size(250, 25);
+            this.buttonRemoveOrder.TabIndex = 3;
+            this.buttonRemoveOrder.Text = "Remove Order";
+            this.buttonRemoveOrder.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonRemoveOrder.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // buttonAddOrder
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
-            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
-            this.button9.Location = new System.Drawing.Point(0, 50);
-            this.button9.Name = "button9";
-            this.button9.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(250, 25);
-            this.button9.TabIndex = 2;
-            this.button9.Text = "Add Order";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = false;
+            this.buttonAddOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            this.buttonAddOrder.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonAddOrder.FlatAppearance.BorderSize = 0;
+            this.buttonAddOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddOrder.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
+            this.buttonAddOrder.Location = new System.Drawing.Point(0, 50);
+            this.buttonAddOrder.Name = "buttonAddOrder";
+            this.buttonAddOrder.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.buttonAddOrder.Size = new System.Drawing.Size(250, 25);
+            this.buttonAddOrder.TabIndex = 2;
+            this.buttonAddOrder.Text = "Add Order";
+            this.buttonAddOrder.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAddOrder.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // buttonShowOrders
             // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
-            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
-            this.button10.Location = new System.Drawing.Point(0, 25);
-            this.button10.Name = "button10";
-            this.button10.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button10.Size = new System.Drawing.Size(250, 25);
-            this.button10.TabIndex = 1;
-            this.button10.Text = "Show Orders";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.UseVisualStyleBackColor = false;
+            this.buttonShowOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            this.buttonShowOrders.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonShowOrders.FlatAppearance.BorderSize = 0;
+            this.buttonShowOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonShowOrders.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonShowOrders.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
+            this.buttonShowOrders.Location = new System.Drawing.Point(0, 25);
+            this.buttonShowOrders.Name = "buttonShowOrders";
+            this.buttonShowOrders.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.buttonShowOrders.Size = new System.Drawing.Size(250, 25);
+            this.buttonShowOrders.TabIndex = 1;
+            this.buttonShowOrders.Text = "Show Orders";
+            this.buttonShowOrders.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonShowOrders.UseVisualStyleBackColor = false;
             // 
             // buttonOrderManagement
             // 
@@ -437,8 +444,8 @@
             // panelCustomerContainer
             // 
             this.panelCustomerContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.panelCustomerContainer.Controls.Add(this.button2);
-            this.panelCustomerContainer.Controls.Add(this.button7);
+            this.panelCustomerContainer.Controls.Add(this.buttonRemoveCustomer);
+            this.panelCustomerContainer.Controls.Add(this.buttonAddCustomer);
             this.panelCustomerContainer.Controls.Add(this.buttonShowCustomer);
             this.panelCustomerContainer.Controls.Add(this.buttonCustomerManagement);
             this.panelCustomerContainer.Location = new System.Drawing.Point(0, 105);
@@ -449,39 +456,39 @@
             this.panelCustomerContainer.Size = new System.Drawing.Size(250, 25);
             this.panelCustomerContainer.TabIndex = 4;
             // 
-            // button2
+            // buttonRemoveCustomer
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
-            this.button2.Location = new System.Drawing.Point(0, 75);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(250, 25);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Remove Customer";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonRemoveCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            this.buttonRemoveCustomer.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonRemoveCustomer.FlatAppearance.BorderSize = 0;
+            this.buttonRemoveCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRemoveCustomer.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRemoveCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
+            this.buttonRemoveCustomer.Location = new System.Drawing.Point(0, 75);
+            this.buttonRemoveCustomer.Name = "buttonRemoveCustomer";
+            this.buttonRemoveCustomer.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.buttonRemoveCustomer.Size = new System.Drawing.Size(250, 25);
+            this.buttonRemoveCustomer.TabIndex = 3;
+            this.buttonRemoveCustomer.Text = "Remove Customer";
+            this.buttonRemoveCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonRemoveCustomer.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // buttonAddCustomer
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
-            this.button7.Location = new System.Drawing.Point(0, 50);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(250, 25);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Add Customer";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = false;
+            this.buttonAddCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            this.buttonAddCustomer.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonAddCustomer.FlatAppearance.BorderSize = 0;
+            this.buttonAddCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddCustomer.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
+            this.buttonAddCustomer.Location = new System.Drawing.Point(0, 50);
+            this.buttonAddCustomer.Name = "buttonAddCustomer";
+            this.buttonAddCustomer.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.buttonAddCustomer.Size = new System.Drawing.Size(250, 25);
+            this.buttonAddCustomer.TabIndex = 2;
+            this.buttonAddCustomer.Text = "Add Customer";
+            this.buttonAddCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAddCustomer.UseVisualStyleBackColor = false;
             // 
             // buttonShowCustomer
             // 
@@ -517,6 +524,91 @@
             this.buttonCustomerManagement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCustomerManagement.UseVisualStyleBackColor = false;
             this.buttonCustomerManagement.Click += new System.EventHandler(this.buttonCustomerManagement_Click);
+            // 
+            // panelUserContainer
+            // 
+            this.panelUserContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.panelUserContainer.Controls.Add(this.buttonRemoveUser);
+            this.panelUserContainer.Controls.Add(this.buttonAddUser);
+            this.panelUserContainer.Controls.Add(this.buttonShowUsers);
+            this.panelUserContainer.Controls.Add(this.buttonUserManagement);
+            this.panelUserContainer.Location = new System.Drawing.Point(0, 140);
+            this.panelUserContainer.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.panelUserContainer.MaximumSize = new System.Drawing.Size(250, 100);
+            this.panelUserContainer.MinimumSize = new System.Drawing.Size(250, 25);
+            this.panelUserContainer.Name = "panelUserContainer";
+            this.panelUserContainer.Size = new System.Drawing.Size(250, 25);
+            this.panelUserContainer.TabIndex = 5;
+            // 
+            // buttonRemoveUser
+            // 
+            this.buttonRemoveUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            this.buttonRemoveUser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonRemoveUser.FlatAppearance.BorderSize = 0;
+            this.buttonRemoveUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRemoveUser.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRemoveUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
+            this.buttonRemoveUser.Location = new System.Drawing.Point(0, 75);
+            this.buttonRemoveUser.Name = "buttonRemoveUser";
+            this.buttonRemoveUser.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.buttonRemoveUser.Size = new System.Drawing.Size(250, 25);
+            this.buttonRemoveUser.TabIndex = 3;
+            this.buttonRemoveUser.Text = "Remove User";
+            this.buttonRemoveUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonRemoveUser.UseVisualStyleBackColor = false;
+            // 
+            // buttonAddUser
+            // 
+            this.buttonAddUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            this.buttonAddUser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonAddUser.FlatAppearance.BorderSize = 0;
+            this.buttonAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddUser.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
+            this.buttonAddUser.Location = new System.Drawing.Point(0, 50);
+            this.buttonAddUser.Name = "buttonAddUser";
+            this.buttonAddUser.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.buttonAddUser.Size = new System.Drawing.Size(250, 25);
+            this.buttonAddUser.TabIndex = 2;
+            this.buttonAddUser.Text = "Add User";
+            this.buttonAddUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAddUser.UseVisualStyleBackColor = false;
+            // 
+            // buttonShowUsers
+            // 
+            this.buttonShowUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            this.buttonShowUsers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonShowUsers.FlatAppearance.BorderSize = 0;
+            this.buttonShowUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonShowUsers.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonShowUsers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
+            this.buttonShowUsers.Location = new System.Drawing.Point(0, 25);
+            this.buttonShowUsers.Name = "buttonShowUsers";
+            this.buttonShowUsers.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.buttonShowUsers.Size = new System.Drawing.Size(250, 25);
+            this.buttonShowUsers.TabIndex = 1;
+            this.buttonShowUsers.Text = "Show Users";
+            this.buttonShowUsers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonShowUsers.UseVisualStyleBackColor = false;
+            this.buttonShowUsers.Click += new System.EventHandler(this.buttonShowUsers_Click);
+            // 
+            // buttonUserManagement
+            // 
+            this.buttonUserManagement.BackColor = System.Drawing.Color.White;
+            this.buttonUserManagement.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonUserManagement.FlatAppearance.BorderSize = 0;
+            this.buttonUserManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUserManagement.Font = new System.Drawing.Font("Raleway SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUserManagement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(84)))));
+            this.buttonUserManagement.Location = new System.Drawing.Point(0, 0);
+            this.buttonUserManagement.Name = "buttonUserManagement";
+            this.buttonUserManagement.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonUserManagement.Size = new System.Drawing.Size(250, 25);
+            this.buttonUserManagement.TabIndex = 0;
+            this.buttonUserManagement.Text = "User Management";
+            this.buttonUserManagement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonUserManagement.UseVisualStyleBackColor = false;
+            this.buttonUserManagement.Click += new System.EventHandler(this.buttonUserManagement_Click);
             // 
             // panelDashboardContainer
             // 
@@ -847,11 +939,12 @@
             this.panelLeft.ResumeLayout(false);
             this.panelLeft.PerformLayout();
             this.panelSignoutContainer.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel.ResumeLayout(false);
             this.panelInventoryContainer.ResumeLayout(false);
             this.panelCategoryContainer.ResumeLayout(false);
             this.panelOrderContainer.ResumeLayout(false);
             this.panelCustomerContainer.ResumeLayout(false);
+            this.panelUserContainer.ResumeLayout(false);
             this.panelDashboardContainer.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -892,18 +985,18 @@
         private System.Windows.Forms.Panel panelChild;
         private System.Windows.Forms.Panel panelInventoryContainer;
         private System.Windows.Forms.Button buttonInventoryManagement;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonRemoveProduct;
+        private System.Windows.Forms.Button buttonAddProduct;
         private System.Windows.Forms.Button buttonShowProduct;
         private System.Windows.Forms.Timer timerMenu;
         private System.Windows.Forms.Panel panelOrderContainer;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button buttonRemoveOrder;
+        private System.Windows.Forms.Button buttonAddOrder;
+        private System.Windows.Forms.Button buttonShowOrders;
         private System.Windows.Forms.Button buttonOrderManagement;
         private System.Windows.Forms.Panel panelCategoryContainer;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buttonRemoveCategory;
+        private System.Windows.Forms.Button buttonAddCategory;
         private System.Windows.Forms.Button buttonShowCategories;
         private System.Windows.Forms.Button buttonCategoryManagement;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
@@ -912,13 +1005,18 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelDashboardContainer;
         private System.Windows.Forms.Button buttonDashboard;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel;
         private System.Windows.Forms.Panel panelSignoutContainer;
         private System.Windows.Forms.Button buttonSignout;
         private System.Windows.Forms.Panel panelCustomerContainer;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button buttonRemoveCustomer;
+        private System.Windows.Forms.Button buttonAddCustomer;
         private System.Windows.Forms.Button buttonShowCustomer;
         private System.Windows.Forms.Button buttonCustomerManagement;
+        private System.Windows.Forms.Panel panelUserContainer;
+        private System.Windows.Forms.Button buttonRemoveUser;
+        private System.Windows.Forms.Button buttonAddUser;
+        private System.Windows.Forms.Button buttonShowUsers;
+        private System.Windows.Forms.Button buttonUserManagement;
     }
 }

@@ -55,7 +55,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewInventory.AutoGenerateColumns = false;
-            this.dataGridViewInventory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dataGridViewInventory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewInventory.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewInventory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.productidDataGridViewTextBoxColumn,
@@ -66,7 +66,7 @@
             this.productpriceDataGridViewTextBoxColumn,
             this.productaddedDataGridViewTextBoxColumn});
             this.dataGridViewInventory.DataSource = this.inventoryBindingSource;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -119,7 +119,6 @@
             this.category_name.HeaderText = "Category";
             this.category_name.Name = "category_name";
             this.category_name.ReadOnly = true;
-            this.category_name.Width = 74;
             // 
             // productquantityDataGridViewTextBoxColumn
             // 
