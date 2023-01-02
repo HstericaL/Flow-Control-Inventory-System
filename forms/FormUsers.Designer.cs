@@ -39,6 +39,7 @@
             this.flowControlDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.flowControl_DataSet = new Flow_Control_Inventory_System.database.FlowControl_DataSet();
             this.usersTableAdapter = new Flow_Control_Inventory_System.database.FlowControl_DataSetTableAdapters.usersTableAdapter();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInventory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flowControlDataSetBindingSource)).BeginInit();
@@ -69,7 +70,8 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewInventory.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewInventory.Location = new System.Drawing.Point(12, 160);
+            this.dataGridViewInventory.Location = new System.Drawing.Point(12, 53);
+            this.dataGridViewInventory.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.dataGridViewInventory.Name = "dataGridViewInventory";
             this.dataGridViewInventory.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -81,7 +83,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewInventory.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewInventory.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
-            this.dataGridViewInventory.Size = new System.Drawing.Size(710, 289);
+            this.dataGridViewInventory.Size = new System.Drawing.Size(710, 396);
             this.dataGridViewInventory.TabIndex = 1;
             // 
             // usernameDataGridViewTextBoxColumn
@@ -124,11 +126,22 @@
             // 
             this.usersTableAdapter.ClearBeforeFill = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Raleway SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(224, 34);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "User Management";
+            // 
             // FormUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(734, 461);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridViewInventory);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -141,6 +154,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.flowControlDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flowControl_DataSet)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -154,5 +168,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn userpasswordDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn userroleDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label1;
     }
 }

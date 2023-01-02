@@ -32,16 +32,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewInventory = new System.Windows.Forms.DataGridView();
-            this.productidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productdescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.category_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productquantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productpriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productaddedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.inventoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.flowControl_DataSet = new Flow_Control_Inventory_System.database.FlowControl_DataSet();
+            this.label1 = new System.Windows.Forms.Label();
             this.inventoryTableAdapter = new Flow_Control_Inventory_System.database.FlowControl_DataSetTableAdapters.inventoryTableAdapter();
+            this.productidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productbrandDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productdescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categorynameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productpriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productquantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInventory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flowControl_DataSet)).BeginInit();
@@ -59,12 +59,11 @@
             this.dataGridViewInventory.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewInventory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.productidDataGridViewTextBoxColumn,
-            this.productnameDataGridViewTextBoxColumn,
+            this.productbrandDataGridViewTextBoxColumn,
             this.productdescriptionDataGridViewTextBoxColumn,
-            this.category_name,
-            this.productquantityDataGridViewTextBoxColumn,
+            this.categorynameDataGridViewTextBoxColumn,
             this.productpriceDataGridViewTextBoxColumn,
-            this.productaddedDataGridViewTextBoxColumn});
+            this.productquantityDataGridViewTextBoxColumn});
             this.dataGridViewInventory.DataSource = this.inventoryBindingSource;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
@@ -74,7 +73,8 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewInventory.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewInventory.Location = new System.Drawing.Point(12, 160);
+            this.dataGridViewInventory.Location = new System.Drawing.Point(12, 53);
+            this.dataGridViewInventory.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.dataGridViewInventory.Name = "dataGridViewInventory";
             this.dataGridViewInventory.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -86,63 +86,8 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewInventory.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewInventory.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
-            this.dataGridViewInventory.Size = new System.Drawing.Size(710, 289);
+            this.dataGridViewInventory.Size = new System.Drawing.Size(710, 396);
             this.dataGridViewInventory.TabIndex = 0;
-            // 
-            // productidDataGridViewTextBoxColumn
-            // 
-            this.productidDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.productidDataGridViewTextBoxColumn.DataPropertyName = "product_id";
-            this.productidDataGridViewTextBoxColumn.HeaderText = "Product ID";
-            this.productidDataGridViewTextBoxColumn.Name = "productidDataGridViewTextBoxColumn";
-            this.productidDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productnameDataGridViewTextBoxColumn
-            // 
-            this.productnameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.productnameDataGridViewTextBoxColumn.DataPropertyName = "product_name";
-            this.productnameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.productnameDataGridViewTextBoxColumn.Name = "productnameDataGridViewTextBoxColumn";
-            this.productnameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productdescriptionDataGridViewTextBoxColumn
-            // 
-            this.productdescriptionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.productdescriptionDataGridViewTextBoxColumn.DataPropertyName = "product_description";
-            this.productdescriptionDataGridViewTextBoxColumn.HeaderText = "Description";
-            this.productdescriptionDataGridViewTextBoxColumn.Name = "productdescriptionDataGridViewTextBoxColumn";
-            this.productdescriptionDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // category_name
-            // 
-            this.category_name.DataPropertyName = "category_name";
-            this.category_name.HeaderText = "Category";
-            this.category_name.Name = "category_name";
-            this.category_name.ReadOnly = true;
-            // 
-            // productquantityDataGridViewTextBoxColumn
-            // 
-            this.productquantityDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.productquantityDataGridViewTextBoxColumn.DataPropertyName = "product_quantity";
-            this.productquantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
-            this.productquantityDataGridViewTextBoxColumn.Name = "productquantityDataGridViewTextBoxColumn";
-            this.productquantityDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productpriceDataGridViewTextBoxColumn
-            // 
-            this.productpriceDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.productpriceDataGridViewTextBoxColumn.DataPropertyName = "product_price";
-            this.productpriceDataGridViewTextBoxColumn.HeaderText = "Price";
-            this.productpriceDataGridViewTextBoxColumn.Name = "productpriceDataGridViewTextBoxColumn";
-            this.productpriceDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productaddedDataGridViewTextBoxColumn
-            // 
-            this.productaddedDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.productaddedDataGridViewTextBoxColumn.DataPropertyName = "product_added";
-            this.productaddedDataGridViewTextBoxColumn.HeaderText = "Added On";
-            this.productaddedDataGridViewTextBoxColumn.Name = "productaddedDataGridViewTextBoxColumn";
-            this.productaddedDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // inventoryBindingSource
             // 
@@ -154,15 +99,68 @@
             this.flowControl_DataSet.DataSetName = "FlowControl_DataSet";
             this.flowControl_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Raleway SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(278, 34);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Inventory Management";
+            // 
             // inventoryTableAdapter
             // 
             this.inventoryTableAdapter.ClearBeforeFill = true;
+            // 
+            // productidDataGridViewTextBoxColumn
+            // 
+            this.productidDataGridViewTextBoxColumn.DataPropertyName = "product_id";
+            this.productidDataGridViewTextBoxColumn.HeaderText = "PID";
+            this.productidDataGridViewTextBoxColumn.Name = "productidDataGridViewTextBoxColumn";
+            this.productidDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productbrandDataGridViewTextBoxColumn
+            // 
+            this.productbrandDataGridViewTextBoxColumn.DataPropertyName = "product_brand";
+            this.productbrandDataGridViewTextBoxColumn.HeaderText = "BRAND";
+            this.productbrandDataGridViewTextBoxColumn.Name = "productbrandDataGridViewTextBoxColumn";
+            this.productbrandDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productdescriptionDataGridViewTextBoxColumn
+            // 
+            this.productdescriptionDataGridViewTextBoxColumn.DataPropertyName = "product_description";
+            this.productdescriptionDataGridViewTextBoxColumn.HeaderText = "DESCRIPTION";
+            this.productdescriptionDataGridViewTextBoxColumn.Name = "productdescriptionDataGridViewTextBoxColumn";
+            this.productdescriptionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // categorynameDataGridViewTextBoxColumn
+            // 
+            this.categorynameDataGridViewTextBoxColumn.DataPropertyName = "category_name";
+            this.categorynameDataGridViewTextBoxColumn.HeaderText = "CATEGORY";
+            this.categorynameDataGridViewTextBoxColumn.Name = "categorynameDataGridViewTextBoxColumn";
+            this.categorynameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productpriceDataGridViewTextBoxColumn
+            // 
+            this.productpriceDataGridViewTextBoxColumn.DataPropertyName = "product_price";
+            this.productpriceDataGridViewTextBoxColumn.HeaderText = "PRICE";
+            this.productpriceDataGridViewTextBoxColumn.Name = "productpriceDataGridViewTextBoxColumn";
+            this.productpriceDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productquantityDataGridViewTextBoxColumn
+            // 
+            this.productquantityDataGridViewTextBoxColumn.DataPropertyName = "product_quantity";
+            this.productquantityDataGridViewTextBoxColumn.HeaderText = "STOCK";
+            this.productquantityDataGridViewTextBoxColumn.Name = "productquantityDataGridViewTextBoxColumn";
+            this.productquantityDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // FormInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(734, 461);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridViewInventory);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -176,6 +174,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.inventoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flowControl_DataSet)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -183,14 +182,14 @@
 
         private System.Windows.Forms.DataGridView dataGridViewInventory;
         private database.FlowControl_DataSet flowControl_DataSet;
-        private System.Windows.Forms.BindingSource inventoryBindingSource;
+        private System.Windows.Forms.Label label1;
         private database.FlowControl_DataSetTableAdapters.inventoryTableAdapter inventoryTableAdapter;
+        private System.Windows.Forms.BindingSource inventoryBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn productidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productbrandDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productdescriptionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn category_name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productquantityDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categorynameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productpriceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productaddedDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productquantityDataGridViewTextBoxColumn;
     }
 }

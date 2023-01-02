@@ -66,19 +66,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.toolStripTop = new System.Windows.Forms.ToolStrip();
-            this.toolRemoveProduct = new System.Windows.Forms.ToolStripButton();
-            this.toolAddProduct = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolRemoveCategory = new System.Windows.Forms.ToolStripButton();
-            this.toolAddCategory = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolRemoveOrder = new System.Windows.Forms.ToolStripButton();
-            this.toolAddOrder = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolRemoveCustomer = new System.Windows.Forms.ToolStripButton();
-            this.toolAddCustomer = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelDateDayTime = new System.Windows.Forms.Label();
@@ -89,6 +80,15 @@
             this.labelTitle = new System.Windows.Forms.Label();
             this.timerDateTime = new System.Windows.Forms.Timer(this.components);
             this.timerMenu = new System.Windows.Forms.Timer(this.components);
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.toolRemoveProduct = new System.Windows.Forms.ToolStripButton();
+            this.toolAddProduct = new System.Windows.Forms.ToolStripButton();
+            this.toolRemoveCategory = new System.Windows.Forms.ToolStripButton();
+            this.toolAddCategory = new System.Windows.Forms.ToolStripButton();
+            this.toolRemoveOrder = new System.Windows.Forms.ToolStripButton();
+            this.toolAddOrder = new System.Windows.Forms.ToolStripButton();
+            this.toolRemoveCustomer = new System.Windows.Forms.ToolStripButton();
+            this.toolAddCustomer = new System.Windows.Forms.ToolStripButton();
             this.panelMain.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.panelSignoutContainer.SuspendLayout();
@@ -100,10 +100,10 @@
             this.panelUserContainer.SuspendLayout();
             this.panelDashboardContainer.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.toolStripTop.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelTitlebar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMain
@@ -182,7 +182,7 @@
             this.flowLayoutPanel.MaximumSize = new System.Drawing.Size(250, 280);
             this.flowLayoutPanel.MinimumSize = new System.Drawing.Size(250, 100);
             this.flowLayoutPanel.Name = "flowLayoutPanel";
-            this.flowLayoutPanel.Size = new System.Drawing.Size(250, 175);
+            this.flowLayoutPanel.Size = new System.Drawing.Size(250, 250);
             this.flowLayoutPanel.TabIndex = 0;
             // 
             // panelInventoryContainer
@@ -198,7 +198,7 @@
             this.panelInventoryContainer.MinimumSize = new System.Drawing.Size(250, 25);
             this.panelInventoryContainer.Name = "panelInventoryContainer";
             this.panelInventoryContainer.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            this.panelInventoryContainer.Size = new System.Drawing.Size(250, 25);
+            this.panelInventoryContainer.Size = new System.Drawing.Size(250, 100);
             this.panelInventoryContainer.TabIndex = 1;
             // 
             // buttonRemoveProduct
@@ -234,6 +234,7 @@
             this.buttonAddProduct.Text = "Add Product";
             this.buttonAddProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAddProduct.UseVisualStyleBackColor = false;
+            this.buttonAddProduct.Click += new System.EventHandler(this.buttonAddProduct_Click);
             // 
             // buttonShowProduct
             // 
@@ -279,7 +280,7 @@
             this.panelCategoryContainer.Controls.Add(this.buttonAddCategory);
             this.panelCategoryContainer.Controls.Add(this.buttonShowCategories);
             this.panelCategoryContainer.Controls.Add(this.buttonCategoryManagement);
-            this.panelCategoryContainer.Location = new System.Drawing.Point(0, 35);
+            this.panelCategoryContainer.Location = new System.Drawing.Point(0, 110);
             this.panelCategoryContainer.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.panelCategoryContainer.MaximumSize = new System.Drawing.Size(250, 100);
             this.panelCategoryContainer.MinimumSize = new System.Drawing.Size(250, 25);
@@ -364,7 +365,7 @@
             this.panelOrderContainer.Controls.Add(this.buttonAddOrder);
             this.panelOrderContainer.Controls.Add(this.buttonShowOrders);
             this.panelOrderContainer.Controls.Add(this.buttonOrderManagement);
-            this.panelOrderContainer.Location = new System.Drawing.Point(0, 70);
+            this.panelOrderContainer.Location = new System.Drawing.Point(0, 145);
             this.panelOrderContainer.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.panelOrderContainer.MaximumSize = new System.Drawing.Size(250, 100);
             this.panelOrderContainer.MinimumSize = new System.Drawing.Size(250, 25);
@@ -448,7 +449,7 @@
             this.panelCustomerContainer.Controls.Add(this.buttonAddCustomer);
             this.panelCustomerContainer.Controls.Add(this.buttonShowCustomer);
             this.panelCustomerContainer.Controls.Add(this.buttonCustomerManagement);
-            this.panelCustomerContainer.Location = new System.Drawing.Point(0, 105);
+            this.panelCustomerContainer.Location = new System.Drawing.Point(0, 180);
             this.panelCustomerContainer.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.panelCustomerContainer.MaximumSize = new System.Drawing.Size(250, 100);
             this.panelCustomerContainer.MinimumSize = new System.Drawing.Size(250, 25);
@@ -532,7 +533,7 @@
             this.panelUserContainer.Controls.Add(this.buttonAddUser);
             this.panelUserContainer.Controls.Add(this.buttonShowUsers);
             this.panelUserContainer.Controls.Add(this.buttonUserManagement);
-            this.panelUserContainer.Location = new System.Drawing.Point(0, 140);
+            this.panelUserContainer.Location = new System.Drawing.Point(0, 215);
             this.panelUserContainer.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.panelUserContainer.MaximumSize = new System.Drawing.Size(250, 100);
             this.panelUserContainer.MinimumSize = new System.Drawing.Size(250, 25);
@@ -672,18 +673,6 @@
             this.label1.Text = "Form Control";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxLogo.Image = global::Flow_Control_Inventory_System.Properties.Resources.logo_120px;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(19, 15);
-            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(10);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(50, 50);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogo.TabIndex = 12;
-            this.pictureBoxLogo.TabStop = false;
-            // 
             // toolStripTop
             // 
             this.toolStripTop.AutoSize = false;
@@ -711,51 +700,11 @@
             this.toolStripTop.TabIndex = 2;
             this.toolStripTop.Text = "toolStripTop";
             // 
-            // toolRemoveProduct
-            // 
-            this.toolRemoveProduct.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolRemoveProduct.Image = global::Flow_Control_Inventory_System.Properties.Resources.package_cancelled_icon;
-            this.toolRemoveProduct.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolRemoveProduct.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.toolRemoveProduct.Name = "toolRemoveProduct";
-            this.toolRemoveProduct.Size = new System.Drawing.Size(23, 20);
-            this.toolRemoveProduct.Text = "Remove Product";
-            // 
-            // toolAddProduct
-            // 
-            this.toolAddProduct.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolAddProduct.Image = global::Flow_Control_Inventory_System.Properties.Resources.package_add_icon;
-            this.toolAddProduct.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolAddProduct.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.toolAddProduct.Name = "toolAddProduct";
-            this.toolAddProduct.Size = new System.Drawing.Size(23, 20);
-            this.toolAddProduct.Text = "Add Product";
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 23);
-            // 
-            // toolRemoveCategory
-            // 
-            this.toolRemoveCategory.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolRemoveCategory.Image = global::Flow_Control_Inventory_System.Properties.Resources.remove_category_icon;
-            this.toolRemoveCategory.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolRemoveCategory.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.toolRemoveCategory.Name = "toolRemoveCategory";
-            this.toolRemoveCategory.Size = new System.Drawing.Size(23, 20);
-            this.toolRemoveCategory.Text = "Remove Category";
-            // 
-            // toolAddCategory
-            // 
-            this.toolAddCategory.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolAddCategory.Image = global::Flow_Control_Inventory_System.Properties.Resources.add_category_icon;
-            this.toolAddCategory.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolAddCategory.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.toolAddCategory.Name = "toolAddCategory";
-            this.toolAddCategory.Size = new System.Drawing.Size(23, 20);
-            this.toolAddCategory.Text = "Add Category";
             // 
             // toolStripSeparator2
             // 
@@ -763,51 +712,11 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 23);
             // 
-            // toolRemoveOrder
-            // 
-            this.toolRemoveOrder.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolRemoveOrder.Image = global::Flow_Control_Inventory_System.Properties.Resources.remove_from_cart_icon;
-            this.toolRemoveOrder.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolRemoveOrder.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.toolRemoveOrder.Name = "toolRemoveOrder";
-            this.toolRemoveOrder.Size = new System.Drawing.Size(23, 20);
-            this.toolRemoveOrder.Text = "Remove Order";
-            // 
-            // toolAddOrder
-            // 
-            this.toolAddOrder.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolAddOrder.Image = global::Flow_Control_Inventory_System.Properties.Resources.add_item_in_cart_icon;
-            this.toolAddOrder.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolAddOrder.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.toolAddOrder.Name = "toolAddOrder";
-            this.toolAddOrder.Size = new System.Drawing.Size(23, 20);
-            this.toolAddOrder.Text = "Add Order";
-            // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 23);
-            // 
-            // toolRemoveCustomer
-            // 
-            this.toolRemoveCustomer.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolRemoveCustomer.Image = global::Flow_Control_Inventory_System.Properties.Resources.remove_user_icon;
-            this.toolRemoveCustomer.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolRemoveCustomer.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.toolRemoveCustomer.Name = "toolRemoveCustomer";
-            this.toolRemoveCustomer.Size = new System.Drawing.Size(23, 20);
-            this.toolRemoveCustomer.Text = "Remove Customer";
-            // 
-            // toolAddCustomer
-            // 
-            this.toolAddCustomer.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolAddCustomer.Image = global::Flow_Control_Inventory_System.Properties.Resources.add_user_icon;
-            this.toolAddCustomer.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolAddCustomer.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.toolAddCustomer.Name = "toolAddCustomer";
-            this.toolAddCustomer.Size = new System.Drawing.Size(23, 20);
-            this.toolAddCustomer.Text = "Add Customer";
             // 
             // toolStripSeparator4
             // 
@@ -827,12 +736,12 @@
             // 
             // labelDateDayTime
             // 
-            this.labelDateDayTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDateDayTime.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelDateDayTime.Font = new System.Drawing.Font("Raleway", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDateDayTime.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.labelDateDayTime.Location = new System.Drawing.Point(0, 4);
+            this.labelDateDayTime.Location = new System.Drawing.Point(0, 0);
             this.labelDateDayTime.Name = "labelDateDayTime";
-            this.labelDateDayTime.Size = new System.Drawing.Size(984, 23);
+            this.labelDateDayTime.Size = new System.Drawing.Size(984, 30);
             this.labelDateDayTime.TabIndex = 0;
             this.labelDateDayTime.Text = "Monday, April 25 2022, 10:30:01";
             this.labelDateDayTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -921,6 +830,98 @@
             this.timerMenu.Interval = 1;
             this.timerMenu.Tick += new System.EventHandler(this.timerMenu_Tick);
             // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxLogo.Image = global::Flow_Control_Inventory_System.Properties.Resources.logo_120px;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(19, 15);
+            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(10);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(50, 50);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 12;
+            this.pictureBoxLogo.TabStop = false;
+            // 
+            // toolRemoveProduct
+            // 
+            this.toolRemoveProduct.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolRemoveProduct.Image = global::Flow_Control_Inventory_System.Properties.Resources.package_cancelled_icon;
+            this.toolRemoveProduct.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolRemoveProduct.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.toolRemoveProduct.Name = "toolRemoveProduct";
+            this.toolRemoveProduct.Size = new System.Drawing.Size(23, 20);
+            this.toolRemoveProduct.Text = "Remove Product";
+            // 
+            // toolAddProduct
+            // 
+            this.toolAddProduct.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolAddProduct.Image = global::Flow_Control_Inventory_System.Properties.Resources.package_add_icon;
+            this.toolAddProduct.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolAddProduct.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.toolAddProduct.Name = "toolAddProduct";
+            this.toolAddProduct.Size = new System.Drawing.Size(23, 20);
+            this.toolAddProduct.Text = "Add Product";
+            // 
+            // toolRemoveCategory
+            // 
+            this.toolRemoveCategory.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolRemoveCategory.Image = global::Flow_Control_Inventory_System.Properties.Resources.remove_category_icon;
+            this.toolRemoveCategory.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolRemoveCategory.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.toolRemoveCategory.Name = "toolRemoveCategory";
+            this.toolRemoveCategory.Size = new System.Drawing.Size(23, 20);
+            this.toolRemoveCategory.Text = "Remove Category";
+            // 
+            // toolAddCategory
+            // 
+            this.toolAddCategory.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolAddCategory.Image = global::Flow_Control_Inventory_System.Properties.Resources.add_category_icon;
+            this.toolAddCategory.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolAddCategory.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.toolAddCategory.Name = "toolAddCategory";
+            this.toolAddCategory.Size = new System.Drawing.Size(23, 20);
+            this.toolAddCategory.Text = "Add Category";
+            // 
+            // toolRemoveOrder
+            // 
+            this.toolRemoveOrder.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolRemoveOrder.Image = global::Flow_Control_Inventory_System.Properties.Resources.remove_from_cart_icon;
+            this.toolRemoveOrder.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolRemoveOrder.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.toolRemoveOrder.Name = "toolRemoveOrder";
+            this.toolRemoveOrder.Size = new System.Drawing.Size(23, 20);
+            this.toolRemoveOrder.Text = "Remove Order";
+            // 
+            // toolAddOrder
+            // 
+            this.toolAddOrder.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolAddOrder.Image = global::Flow_Control_Inventory_System.Properties.Resources.add_item_in_cart_icon;
+            this.toolAddOrder.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolAddOrder.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.toolAddOrder.Name = "toolAddOrder";
+            this.toolAddOrder.Size = new System.Drawing.Size(23, 20);
+            this.toolAddOrder.Text = "Add Order";
+            // 
+            // toolRemoveCustomer
+            // 
+            this.toolRemoveCustomer.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolRemoveCustomer.Image = global::Flow_Control_Inventory_System.Properties.Resources.remove_user_icon;
+            this.toolRemoveCustomer.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolRemoveCustomer.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.toolRemoveCustomer.Name = "toolRemoveCustomer";
+            this.toolRemoveCustomer.Size = new System.Drawing.Size(23, 20);
+            this.toolRemoveCustomer.Text = "Remove Customer";
+            // 
+            // toolAddCustomer
+            // 
+            this.toolAddCustomer.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolAddCustomer.Image = global::Flow_Control_Inventory_System.Properties.Resources.add_user_icon;
+            this.toolAddCustomer.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolAddCustomer.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.toolAddCustomer.Name = "toolAddCustomer";
+            this.toolAddCustomer.Size = new System.Drawing.Size(23, 20);
+            this.toolAddCustomer.Text = "Add Customer";
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -948,11 +949,11 @@
             this.panelDashboardContainer.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.toolStripTop.ResumeLayout(false);
             this.toolStripTop.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panelTitlebar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -322,5 +322,11 @@ namespace Flow_Control_Inventory_System.forms
         }
 
 
+        // Product Buttons
+        private void buttonAddProduct_Click(object sender, EventArgs e)
+        {
+            var addproduct = new FormAddProduct();
+            addproduct.Show();
+        }
     }
 }
