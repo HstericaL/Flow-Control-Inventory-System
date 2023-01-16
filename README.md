@@ -36,41 +36,24 @@ Here are the table, datatype and variabel names:
 
 | **users** |  |
 | ----------- | ----------- |
-| **user_name** | ***varchar*** |
-| user_password | varchar |
+| **user_name** | ***Short Text*** |
+| user_password | Short Text |
+| user_role | Short Text |
 
 | **inventory** |  |
 | ----------- | ----------- |
-| **product_id** | ***int*** |
-| product_name | varchar |
-| product_description | text |
-| category_name | varchar |
-| product_quantity | int |
-| product_price | decimal(10,2) |
-| product_added | date |
+| **product_id** | ***Short Text*** |
+| product_brand | Short Text |
+| product_description | Short Text |
+| category_name | Short Text |
+| product_price | Currency |
+| product_quantity | Number |
 
 | **category** |  |
 | ----------- | ----------- |
-| **category_name** | ***varchar*** |
-| category_id | int |
+| **category_name** | ***Short Text*** |
 
-
-
-
-| **orders** |  |
-| ----------- | ----------- |
-| **order_id** | ***int*** |
-| customer_id | int |
-| order_date | date |
-| shipping_address | varchar |
-| total_cost | decimal(10,2) |
-
-| **customers** |  |
-| ----------- | ----------- |
-| **customer_id** | ***int*** |
-| customer_name | varchar |
-| contact_info | varchar |
-| billing_address | varchar |
+More to come soon...
 
 </tr></td>
 </table>
