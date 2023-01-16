@@ -4,6 +4,8 @@
 
 <br>
 
+![Social Preview](assets/social_preview.png)
+
 ![](https://i.imgur.com/waxVImv.png)
 
 <p align="center"> A personal project about 'Inventory System'.</p>
@@ -24,6 +26,8 @@ git clone https://github.com/HstericaL/Flow-Control-Inventory-System.git
 ![](https://i.imgur.com/waxVImv.png)
 
 ## <center/>Information
+
+![Mockup](assets/mockup.jpg)
 
 ![](https://i.imgur.com/waxVImv.png)
 ## <center/>Database Information
