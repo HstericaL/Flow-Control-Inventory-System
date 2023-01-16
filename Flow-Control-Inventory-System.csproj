@@ -229,6 +229,7 @@
     <None Include="assets\icons\remove-user-icon.png" />
     <None Include="assets\icons\user-icon.png" />
     <Content Include="assets\mockup.jpg" />
+    <Content Include="assets\mockup2.jpg" />
     <Content Include="assets\social_preview.png" />
     <Content Include="database\FlowControl-DB.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

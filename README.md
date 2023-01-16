@@ -28,6 +28,7 @@ git clone https://github.com/HstericaL/Flow-Control-Inventory-System.git
 ## <center/>Information
 
 ![Mockup](assets/mockup.jpg)
+![Mockup2](assets/mockup2.jpg)
 
 ![](https://i.imgur.com/waxVImv.png)
 ## <center/>Database Information
